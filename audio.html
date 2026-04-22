@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Riproduzione Audio</title>
+</head>
+<body>
+
+<button onclick="riproduciAudio()">Riproduci audio</button>
+
+<audio id="mioAudio">
+  <source src="audio.mp3" type="audio/mpeg">
+  Il tuo browser non supporta l'audio.
+</audio>
+
+<script>
+  function riproduciAudio() {
+    const audio = document.getElementById("mioAudio");
+    audio.play();
+  }
+</script>
+
+</body>
+</html>
